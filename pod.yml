@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flasktestapp
+  labels:
+    name: flasktestapp
+    app: flasktestapp
+spec:
+  containers:
+  - name: flasktestapp
+    image: flasktestapp
+    imagePullPolicy: IfNotPresent

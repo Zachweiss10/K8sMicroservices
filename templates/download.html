@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} Download Page {% endblock %}
+{% block content%}
+<p1>This is a list of all files that have been uploaded</p1>
+<p2>{{file}}</p2>
+{%for file in content %}
+{%if file == ".iAmHiding" or file == ".DS_Store":%}
+{%else:%}
+      <li>
+      	<a class="Download" href=/download/{{ file }} target="_blank" style="margin-right: 5px;">Download {{file}} </a>
+      </li>
+{%endif%}
+ {% endfor %}
+{% endblock %}

@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block title %}Home Page {% endblock %}
+{% block content%}
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/static/Joe.jpg" style="width:100%">
+      <div class="container">
+        <h2>Joe P Mooney</h2>
+        <p class="title">Manager of Davis Project</p>
+        <p>Joe graduated from the University of Limerick with a BSc in Computer Science in 1989. Later, in 2007, he graduated with a MSc in Computer Science from THE Arizona State University. He currently is a Senior Software Enginer at General Dynamics</p>
+        <p>joe.mooney@gd-ms.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/Ryan.jpeg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Ryan Matusik</h2>
+        <p class="title">Developer</p>
+        <p>Ryan was born in Chicago, Illinois in 1987. He holds a Bachelor of Arts degree in English Literature from the University of Wisconsin-Madison and is currently working through the final year of a B.S.E in Computer Systems Engineering at Arizona State in Tempe, Arizona.</p>
+        <p>rmatusik@asu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="/static/Haley.jpeg" alt="Haley" style="width:100%">
+      <div class="container">
+        <h2>Haley Hanson</h2>
+        <p class="title">Developer</p>
+        <p>Haley is a self-taught home chef specializing in Vietnamese cuisine. She is the host of popular YouTube cooking channel “Saigon SMASH” where she’s known for her liberal use of a novelty-sized rubber mallet as a kitchen tool..</p>
+        <p>hrhanso1@asu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/Zachary.jpeg" alt="Zachary" style="width:100%">
+      <div class="container">
+        <h2>Zachary Weiss</h2>
+        <p class="title">Developer</p>
+        <p>Zachary is a veteran of the United States Navy and shamelessly uses his status to receive free dinner at Chili’s every Veteran’s day.</p>
+        <p>zdweiss@asu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/static/Sidney.jpeg" alt="Sidney" style="width:100%">
+      <div class="container">
+        <h2>Sidney Davis</h2>
+        <p class="title">Developer</p>
+        <p>Sidney was born in a patch of chaparral somewhere in the Sonora desert. She holds a degree in Art History from University of Phoenix and spends her free time on her javelina farm with her husband Bill and their quadruplets. </p>
+        <p>smdavi23@asu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+ <div class="column">
+    <div class="card">
+      <img src="/static/Jake.jpeg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Jacob Toews</h2>
+        <p class="title">Developer</p>
+        <p>Jacob has a butt where his head should be and has spent the majority of his life trying to overcome the hardships brought upon him by his physical deformity.</p>
+        <p>jtoews@asu.edu</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

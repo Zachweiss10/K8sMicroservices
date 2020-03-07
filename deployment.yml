@@ -1,0 +1,35 @@
+#This part of the deployment yaml describes how many replicas or pods are required #and other properties
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flasktestappdeployment
+spec:
+  selector:
+    matchLabels:
+      app: flasktestapp
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: flasktestapp
+    spec:
+      containers:
+        - name: flasktestapp
+          image: flasktestapp
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 5001
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-ingress
+  template: 
+    metadata:
+      labels:
+        app: flask-ingress
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+          - containerPort: 90
