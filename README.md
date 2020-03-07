@@ -5,3 +5,5 @@ This is a senior capstone project written by Zachary Weiss, Jacob Toews, Haley H
 
 If you would like to use any part of this project please contact us AND give us credit.
 Thank you!
+
+zachary.weiss.cs@gmail.com
